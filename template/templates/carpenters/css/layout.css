@@ -17,14 +17,8 @@
 	height: 185px;
 }
 
-#body {
-	background: url('../images/bg_body.png') top center repeat-y;
-}
-
-#masthead {
-	width: 542px;
-	float: left;
-}
+#body {background: url('../images/bg_bodyBottom.png') bottom center no-repeat; padding-bottom: 140px;}
+#body > div {background: url('../images/bg_body.png') top center repeat-y;}
 
 #content {
 	width: 542px;
