@@ -2,57 +2,70 @@
 .moduletable {}
 
 /* @group hmenu */
-.moduletable_hmenu {}
+.moduletable_hmenu.primary {
+	background: url('../images/bg_menu.png') bottom center no-repeat;
+	padding: 40px 0 6px 0;
+	font-size: 14px;
+	text-align:center;
+}
 
-.moduletable_hmenu > ul {
+.moduletable_hmenu.primary > ul {
 	margin: 0;
 	padding: 0;
 }
 
-.moduletable_hmenu > ul > li {
+.moduletable_hmenu.primary > ul > li:first-child {background: none;}
+.moduletable_hmenu.primary > ul > li {
+	background: url('../images/divider_menuItems.png') left center no-repeat;
 	display: inline-block;
 	*display: inline;
 	*zoom: 1;
 	position: relative;
-	
-	padding: 0 5px;
+
+	padding: 0 37px;
+	line-height: 47px;
 }
 
-.moduletable_vmenu > ul > li > a,
-.moduletable_vmenu > ul > li > span {
-	display: block;
+.moduletable_hmenu.primary a {
+	color: #000000;
 }
 
-.moduletable_vmenu > ul > li > a span,
-.moduletable_vmenu > ul > li > span span {
-	
+.moduletable_hmenu.primary a:hover,
+.moduletable_hmenu.primary a:active {
+	color: #d72229;
+	text-decoration: none;
 }
 
-.moduletable_vmenu ul ul {
-	position: absolute;
-	top: 100%;
-	left: 0;
-	width: 100%;
+.moduletable_hmenu.header {
+	float: right;
+	font-size: 12px;
+	margin: 20px 0 0 0;
 }
-/* /hmenu */
 
-
-/* @group vmenu */
-.moduletable_vmenu {}
-
-.moduletable_vmenu > ul {
+.moduletable_hmenu.header > ul {
 	margin: 0;
 	padding: 0;
-	list-style: none;
 }
 
-.moduletable_vmenu ul ul {
-	margin: 0.5em 0 1em 1em;
-	list-style: none;
+.moduletable_hmenu.header > ul > li:first-child {border: none;}
+.moduletable_hmenu.header > ul > li {
+	border-left: 1px solid #d72229;
+	display: inline-block;
+	*display: inline;
+	*zoom: 1;
+	position: relative;
+	line-height: 12px;
+	padding: 0 10px;
 }
 
-.moduletable_vmenu li {
-	
+.moduletable_hmenu.header a {
+	color: #d72229;
 }
-/* /vmenu */
+
+.moduletable_hmenu.header a:hover,
+.moduletable_hmenu.header a:active {
+	color: #d72229;
+}
+
+/*masthead*/
 
