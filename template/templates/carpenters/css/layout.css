@@ -21,9 +21,13 @@
 #body > div {background: url('../images/bg_body.png') top center repeat-y;}
 
 #content {
-	width: 542px;
 	float: left;
+	width: 542px;
 }
+
+#masthead {}
+
+#comp {}
 
 #sidebar {
 	float: left;
