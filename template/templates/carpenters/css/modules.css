@@ -67,8 +67,35 @@
 	color: #d72229;
 }
 
+.moduletable_hmenu.secondary {
+	font-size: 10px;
+	line-height: 9px;
+}
+
+.moduletable_hmenu.secondary > ul {
+	margin: 0 0 10px 0;
+	padding: 0;
+}
+
+.moduletable_hmenu.secondary > ul > li:first-child {border: none; padding: 0 8px 0 0;}
+.moduletable_hmenu.secondary > ul > li {
+	border-left: 1px solid #d72229;
+	display: inline-block;
+	*display: inline;
+	*zoom: 1;
+	position: relative;
+	padding: 0 8px;
+}
+
+.moduletable_hmenu.secondary a {
+	position: relative;
+	top:1px;
+}
+
 /*masthead*/
 
 /*sidebar*/
 #sidebar .moduletable:first-child {margin-top: 0px;}
 #sidebar .moduletable {margin-top: 30px;}
+
+/*footer*/
