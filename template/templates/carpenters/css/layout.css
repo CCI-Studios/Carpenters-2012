@@ -35,10 +35,13 @@
 	padding-left: 50px;
 }
 
-#bottom {
-	margin-top: 30px;
 #bottom {margin-top: 30px;}
 
 #footer {padding: 0 0 20px 0;}
 
+#copyright {
+	float: right;
+	font-size: 10px;
+	line-height: 10px;
+	text-align: right;
 }
