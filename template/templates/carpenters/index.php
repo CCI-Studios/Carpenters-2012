@@ -63,6 +63,7 @@ $analytics = "UA-XXXXX-X"; // FIXME Update to client ID
 	</div>
 		
 	<div id="body"><div class="container"><div class="bodyContainer">
+		
 		<div id="content">
 			<div id="masthead">
 				<jdoc:include type="modules" name="masthead" style="xhtml" />
@@ -71,14 +72,18 @@ $analytics = "UA-XXXXX-X"; // FIXME Update to client ID
 				<jdoc:include type="component" />
 			</div>
 		</div>
+		
 		<div id="sidebar">
 			<jdoc:include type="modules" name="sidebar" style="xhtml" />
 		</div>
+		<div class="clear"></div>
+		
 		<div id="bottom">
 			<jdoc:include type="modules" name="bottom" style="xhtml" />
 		</div>
 		<div class="clear"></div>
 	</div></div></div>
+	
 	
 	<div id="footer">
 		<jdoc:include type="modules" name="footer" style="xhtml" />
