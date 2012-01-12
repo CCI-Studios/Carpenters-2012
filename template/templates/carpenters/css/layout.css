@@ -1,1 +1,38 @@
 /* layout */
+
+.container {
+	width: 940px;
+	padding: 0 20px;
+	margin: 0 auto;
+}
+
+.bodyContainer {
+	padding: 25px 13px 25px 19px;
+}
+
+
+#header {
+	background: url('../images/bg_header.jpg') top center no-repeat;
+	padding: 0 20px;
+	height: 185px;
+}
+
+#body {
+	background: url('../images/bg_body.png') top center repeat-y;
+}
+
+#masthead {
+	width: 542px;
+	float: left;
+}
+
+#content {
+	width: 542px;
+	float: left;
+}
+
+#sidebar {
+	float: left;
+	width: 315px;
+	padding-left: 50px;
+}
