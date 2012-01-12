@@ -11,3 +11,8 @@
 /* TODO Update selection BG color */
 ::-moz-selection{ background: #FF5E99; color:#fff; text-shadow: none; }
 ::selection { background:#FF5E99; color:#fff; text-shadow: none; }
+
+.redLinkStyle {
+	font-size: 10px;
+	font-style: italic;
+}
