@@ -86,7 +86,13 @@ $analytics = "UA-XXXXX-X"; // FIXME Update to client ID
 	
 	
 	<div id="footer">
-		<jdoc:include type="modules" name="footer" style="xhtml" />
+		<div class="container">
+			<div id="copyright">
+				<p>© Carpenters Local 1256 <?php echo date('Y') ?>. All Rights Reserved.</p>
+				<p>Site By CCI Studios</p>
+			</div>
+			<jdoc:include type="modules" name="footer" style="xhtml" />
+		</div>
 	</div>
 	
 
