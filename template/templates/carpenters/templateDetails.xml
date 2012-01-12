@@ -28,6 +28,7 @@
 
 	<positions>
 		<position>header</position>
+		<position>top</position>
 		<position>masthead</position>
 		<position>sidebar</position>
 		<position>bottom</position>
