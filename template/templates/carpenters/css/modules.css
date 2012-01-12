@@ -69,3 +69,6 @@
 
 /*masthead*/
 
+/*sidebar*/
+#sidebar .moduletable:first-child {margin-top: 0px;}
+#sidebar .moduletable {margin-top: 30px;}
