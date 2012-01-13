@@ -3,15 +3,16 @@
 
 /* @group hmenu */
 .moduletable_hmenu.primary {
-	background: url('../images/bg_menu.jpg') bottom center no-repeat;
-	padding: 40px 0 6px 0;
 	font-size: 14px;
 	text-align:center;
+	position: relative;
 }
 
 .moduletable_hmenu.primary > ul {
-	margin: 0;
-	padding: 0;
+	background: url('../images/bg_menu.jpg') bottom center no-repeat;
+	padding: 40px 10px 6px;
+	margin: 0 auto;
+	width: 960px;
 }
 
 .moduletable_hmenu.primary > ul > li:first-child {background: none;}
