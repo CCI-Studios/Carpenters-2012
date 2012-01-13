@@ -99,6 +99,6 @@
 #sidebar .moduletable {margin-top: 30px;}
 
 .moduletable.recentNewsStyle {margin-top: 15px;}
-.moduletable.recentNewsStyle .newsflash {margin: -8px -6px -7px -8px; padding: 8px 6px 7px 8px;}
-.moduletable.recentNewsStyle .newsflash:hover {background: #f7f7f7;}
+.moduletable.recentNewsStyle .newsflash ul {margin: 0px -6px 0px -8px; padding: 8px 6px 7px 8px;}
+.moduletable.recentNewsStyle .newsflash ul:hover {background: #f7f7f7;}
 /*footer*/
