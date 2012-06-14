@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+$analytics = "UA-XXXXX-X"; // FIXME Update to client ID
 <head>
 	<jdoc:include type="head" />
 	
@@ -33,6 +34,20 @@
 			<?php echo $app->getCfg('offline_message'); ?>
 		</p>
 	</div>
+
+
+	<?php if ($testing): ?>
+
+	<?php else: ?>
+		<?php if ($analytics): ?>
+			<script>
+				var _gaq=[["_setAccount","<?php echo $analytics?>"],["_trackPageview"]];
+				(function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];g.async=1;
+					g.src=("https:"==location.protocol?"//ssl":"//www")+".google-analytics.com/ga.js";
+					s.parentNode.insertBefore(g,s)}(document,"script"));
+		  	</script>
+		<?php endif; ?>
+	<?php endif; ?>
 	
 </body>
 </html>
