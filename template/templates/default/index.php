@@ -48,9 +48,9 @@ $typekit = null;
 
 	<script src="/templates/<?= $this->template ?>/js/libs/modernizr-1.7.min.js"></script>
 	<?php if ($typekit): ?>
-	<!-- load typekit -->
-	<script type="text/javascript" src="http://use.typekit.com/<?= $typekit ?>.js"></script>
-	<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+		<!-- load typekit -->
+		<script type="text/javascript" src="http://use.typekit.com/<?= $typekit ?>.js"></script>
+		<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
 	<?php endif; ?>
 </head>
 
@@ -96,8 +96,8 @@ $typekit = null;
 					g.src=("https:"==location.protocol?"//ssl":"//www")+".google-analytics.com/ga.js";
 					s.parentNode.insertBefore(g,s)}(document,"script"));
 		  	</script>
-			<script src="/templates/<?= $this->template ?>/js/scripts.min.js"></script>
 		<?php endif; ?>
+		<script src="/templates/<?= $this->template ?>/js/scripts.min.js"></script>
 	<?php endif; ?>
 </body>
 </html>
