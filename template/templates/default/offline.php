@@ -18,6 +18,7 @@
 	}
 	</style>
 	
+	<link rel="stylesheet" href="/templates/<?= $this->template ?>/css/offline.css" />
 </head>
 
 <body>
