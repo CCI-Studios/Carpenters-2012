@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 $analytics = "UA-XXXXX-X"; // FIXME Update to client ID
+$typekit = null;
 <head>
 	<jdoc:include type="head" />
 	
@@ -20,6 +21,11 @@ $analytics = "UA-XXXXX-X"; // FIXME Update to client ID
 	</style>
 	
 	<link rel="stylesheet" href="/templates/<?= $this->template ?>/css/offline.css" />
+	<?php if ($typekit): ?>
+		<!-- load typekit -->
+		<script type="text/javascript" src="http://use.typekit.com/<?= $typekit ?>.js"></script>
+		<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+	<?php endif; ?>
 </head>
 
 <body>
