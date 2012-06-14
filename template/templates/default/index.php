@@ -41,9 +41,19 @@ $typekit = null;
 
 	<!-- load css -->
 	<?php if ($testing): ?>
-		<link rel="stylesheet" href="/templates/<?= $this->template ?>/css/template.css">
+		<!--[if (gt IE 8) | (IEMobile)]><!-->
+			<link rel="stylesheet" href="/templates/<?= $this->template ?>/css/template.css">
+		<!--<![endif]-->
+		<!--[if (lt IE 9) & (!IEMobile)]>
+			<link rel="stylesheet" href="/templates/<?= $this->template ?>/css/template-ie.css">
+		<![endif]-->
 	<?php else: ?>
-		<link rel="stylesheet" href="/templates/<?= $this->template ?>/css/template.min.css">
+		<!--[if (gt IE 8) | (IEMobile)]><!-->
+			<link rel="stylesheet" href="/templates/<?= $this->template ?>/css/template.min.css">
+		<!--<![endif]-->
+		<!--[if (lt IE 9) & (!IEMobile)]>
+			<link rel="stylesheet" href="/templates/<?= $this->template ?>/css/template-ie.min.css">
+		<![endif]-->
 	<?php endif; ?>
 
 	<script src="/templates/<?= $this->template ?>/js/libs/modernizr-1.7.min.js"></script>

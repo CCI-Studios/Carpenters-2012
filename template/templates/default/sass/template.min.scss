@@ -1,3 +1,4 @@
+// load mobile first
 @import "normalize";
 
 @import "elements";
@@ -8,3 +9,20 @@
 
 @import "styles";
 @import "content";
+
+
+@media (min-width:320px) {
+    // @import "320-up";
+}
+@media (min-width:480px) {
+    // @import "480-up";
+}
+@media (min-width:780px) {
+    // @import "780-up";
+}
+@media (min-width:960px) {
+    // @import "960-up";
+}
+@media (min-width:1100px) {
+    // @import "1100-up";
+}
