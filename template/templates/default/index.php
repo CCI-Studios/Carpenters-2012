@@ -72,17 +72,6 @@ $typekit = null;
 		</header>
 
 		<div id="main">
-
-			<div class="phone-visible">phone visible</div>
-			<div class="tablet-visible">tablet visible</div>
-			<div class="mobile-visible">mobile visible</div>
-			<div class="desktop-visible">desktop visible</div>
-			<div class="phone-hidden">phone hidden</div>
-			<div class="tablet-hidden">tablet hidden</div>
-			<div class="mobile-hidden">mobile hidden</div>
-			<div class="desktop-hidden">desktop hidden</div>
-
-
 			<aside>
 				<jdoc:include type="modules" name="left" style="xhtml" />
 			</aside>
