@@ -1,24 +1,37 @@
 <!DOCTYPE html>
-<html lang="en">
+<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
+<!--[if lt IE 7 ]> <html class="no-js ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]> <html class="no-js ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]> <html class="no-js ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<?php
+// get current menu name
+$menu = JSite::getMenu();
+if ($menu && $menu->getActive())
+    $menu = $menu->getActive()->alias;
+else
+	$menu = "";
+
+if ($_SERVER['SERVER_PORT'] === 8888 ||
+		$_SERVER['SERVER_ADDR'] === '127.0.0.1' ||
+		stripos($_SERVER['SERVER_NAME'], 'ccistaging') !== false ||
+		stripos($_SERVER['SERVER_NAME'], 'dev') === 0) {
+
+	$testing = true;
+	error_reporting(E_ALL);
+	ini_set('display_errors', '1');
+} else {
+	$testing = false;
+}
+
+JHTML::_('behavior.mootools');
 $analytics = "UA-XXXXX-X"; // FIXME Update to client ID
 $typekit = null;
+?>
+
 <head>
+	<meta charset="utf-8" />
 	<jdoc:include type="head" />
-	
-	<style>
-	body {
-		margin: 0;
-		color: #333;
-		font-family: Helvetica, Arial, sans-serif;
-		font-size: 12px;
-	}
-	
-	#wrapper {
-		width: 940px;
-		margin: 20px auto 10px;
-		padding: 0 10px;
-	}
-	</style>
 	
 	<link rel="stylesheet" href="/templates/<?= $this->template ?>/css/offline.css" />
 	<?php if ($typekit): ?>
@@ -33,12 +46,11 @@ $typekit = null;
 	<div class="wrapper">
 		<jdoc:include type="message" />
 		
-		<p class="text-center">
-			<img src="/images/default/logo-large.png" />
-		</p>
-		<p>
-			<?php echo $app->getCfg('offline_message'); ?>
-		</p>
+		<p class="text-center"><img src="/images/default/logo-@2x.png" /></p>
+		<p><?= 
+			str_replace("\n", '<br/>', 
+				str_replace("\n\n", "</p><p>", $app->getCfg('offline_message'))
+			); ?></p>
 	</div>
 
 
