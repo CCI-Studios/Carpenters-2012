@@ -46,7 +46,7 @@ $typekit = null;
 	<div class="wrapper">
 		<jdoc:include type="message" />
 		
-		<p class="text-center"><img src="/images/default/logo-@2x.png" /></p>
+		<p class="text-center"><img src="/images/default/logo-2x.png" /></p>
 		<p><?= 
 			str_replace("\n", '<br/>', 
 				str_replace("\n\n", "</p><p>", $app->getCfg('offline_message'))
