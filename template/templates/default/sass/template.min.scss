@@ -1,10 +1,16 @@
+@import "_variables";
+@import "_mixins";
+
 // load mobile first
 @import "normalize";
 
 @import "elements";
 @import "forms";
+// @import "forms-tight";
+// @import "forms-loose";
 
 @import "grid";
+@import "grid-960"; // TODO: always include 960gs;
 @import "layout";
 @import "modules";
 @import "menu";
@@ -12,17 +18,14 @@
 @import "styles";
 @import "com_content";
 
-
-@media only screen and (min-width:320px) {
-    @import "styles-320";
-}
 // @import "grid-320";
+@import "styles-320";
 @media only screen and (min-width:480px) {
     @import "styles-480";
 }
-@media only screen and (min-width:780px) {
-    @import "styles-780";
+@media only screen and (min-width:760px) {
 	// @import "grid-760";
+    @import "styles-760";
 }
 @media only screen and (min-width:960px) {
     @import "styles-960";

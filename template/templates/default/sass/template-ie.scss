@@ -1,10 +1,16 @@
+@import "_variables";
+@import "_mixins";
+
 // load mobile first
 @import "normalize";
 
 @import "elements";
 @import "forms";
+// @import "forms-tight";
+// @import "forms-loose";
 
 @import "grid";
+@import "grid-960"; // TODO: always include 960gs;
 @import "layout";
 @import "modules";
 @import "menu";
@@ -12,14 +18,11 @@
 @import "styles";
 @import "com_content";
 
-// @import "320-up";
+// @media queries
 // @import "grid-320";
 @import "styles-320";
-// @import "480-up";
 @import "styles-480";
-// @import "780-up";
-@import "styles-780";
-// @import "960-up";
 // @import "grid-760";
+@import "styles-760";
 @import "styles-960";
 // don't load 1100, assume std desktop
