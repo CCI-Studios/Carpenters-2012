@@ -5,6 +5,7 @@
 @import "forms";
 
 @import "grid";
+@import "grid-960"; // TODO: always include 960gs;
 @import "layout";
 @import "modules";
 @import "menu";
@@ -13,14 +14,12 @@
 @import "com_content";
 
 // @import "320-up";
-@import "grid-320";
+// @import "grid-320";
 @import "styles-320";
 // @import "480-up";
 @import "styles-480";
 // @import "780-up";
 @import "styles-780";
-@import "grid-760";
-// @import "960-up";
-@import "grid-960";
+// @import "grid-760";
 @import "styles-960";
 // don't load 1100, assume std desktop

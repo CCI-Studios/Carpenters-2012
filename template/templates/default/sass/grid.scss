@@ -30,7 +30,7 @@ div.container
 		}
 
 		@for $i from 1 through $columns {
-			.span-#{$i} { width: $column-width * $i + $gutter*($i - 1)px; }
+			.span-#{$i} { width: #{$column-width * $i + $gutter*($i - 1)}px; }
 		}
 	}
 }
