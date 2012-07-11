@@ -72,13 +72,31 @@ $typekit = null;
 		</header>
 
 		<div id="main">
-			<aside>
-				<jdoc:include type="modules" name="left" style="xhtml" />
-			</aside>
+			<div id="content">
+				<?php if ($this->countModules('precontent')): ?>
+					<jdoc:include type="modules" name="precontent" style="xhtml" />
+				<?php endif; ?>
 
-			<article>
-				<jdoc:include type="component" />
-			</article>
+				<article>
+					<jdoc:include type="component" />
+				</article>
+
+				<?php if ($this->countModules('postcontent')): ?>
+					<jdoc:include type="modules" name="postcontent" style="xhtml" />
+				<?php endif; ?>
+			</div>
+
+			<?php if ($this->countModules('sidebar1')): ?>
+				<aside>
+					<jdoc:include type="modules" name="sidebar1" style="xhtml" />
+				</aside>
+			<?php endif; ?>
+
+			<?php if ($this->countModules('sidebar2')): ?>
+				<aside>
+					<jdoc:include type="modules" name="sidebar2" style="xhtml" />
+				</aside>
+			<?php endif; ?>
 		</div>
 
 		<footer>
