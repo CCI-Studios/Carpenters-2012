@@ -66,25 +66,6 @@ $typekit = null;
 
 <body class="<?= $menu ?>">
 
-<<<<<<< HEAD:template/templates/carpenters/index.php
-	<div id="header" class="container">
-		<jdoc:include type="modules" name="header" style="xhtml" />
-	</div>
-		
-	<div id="top">
-		<jdoc:include type="modules" name="top" style="xhtml" />
-	</div>
-		
-	<div id="body"><div class="container"><div class="bodyContainer">
-		
-		<div id="content">
-			<div id="masthead">
-				<jdoc:include type="modules" name="masthead" style="xhtml" />
-			</div>
-			<div id="comp">
-				<jdoc:include type="component" />
-			</div>
-=======
 	<div id="wrapper">
 		<header>
 			<jdoc:include type="modules" name ="header" style="xhtml" />
@@ -116,31 +97,12 @@ $typekit = null;
 					<jdoc:include type="modules" name="sidebar2" style="xhtml" />
 				</aside>
 			<?php endif; ?>
->>>>>>> 1bae68b0eba25d74c3a22ca4bd4c91367340f2e9:template/templates/default/index.php
 		</div>
-		
-		<div id="sidebar">
-			<jdoc:include type="modules" name="sidebar" style="xhtml" />
-		</div>
-		<div class="clear"></div>
-		
-		<div id="bottom">
-			<jdoc:include type="modules" name="bottom" style="xhtml" />
-		</div>
-		<div class="clear"></div>
-	</div></div></div>
-	
-	
-	<div id="footer">
-		<div class="container">
-			<div id="copyright">
-				<p>© Carpenters Local 1256 <?php echo date('Y') ?>. All Rights Reserved.</p>
-				<p>Site By CCI Studios</p>
-			</div>
+
+		<footer>
 			<jdoc:include type="modules" name="footer" style="xhtml" />
-		</div>
+		</footer>
 	</div>
-	
 
 	<div class="hidden">
 		<jdoc:include type="modules" name="hidden" style="raw" />
