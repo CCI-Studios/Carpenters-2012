@@ -98,6 +98,10 @@ $typekit = null;
 
 		<div id="footer">
 			<jdoc:include type="modules" name="footer" style="rounded" />
+			<div id="copyright">
+				&copy; Carpenter's Local 1256 <?php echo date('Y') ?>. All Rights Reserved.<br />
+				Site by <a href="http://ccistudios.com">CCI Studios</a>
+			</div>
 		</div>
 	</div></div>
 
