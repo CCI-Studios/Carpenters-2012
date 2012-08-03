@@ -1,13 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE install PUBLIC "-//Joomla! 2.5//DTD template 1.0//EN" "http://www.joomla.org/xml/dtd/1.6/template-install.dtd">
 <extension version="2.5" type="template" method="upgrade">
 	<name>carpenters</name>
-	<creationDate>August 2nd, 2012</creationDate>
+	<creationDate>August 2, 2012</creationDate>
 	<author>Matt Elliott</author>
 	<authorEmail>melliott@ccistudios.com</authorEmail>
 	<authorUrl>http://ccistudios.com</authorUrl>
 	<copyright>Copyright (C) 2012. All rights reserved.</copyright>
 	<version>1.0.0</version>
-	<description>Carpenter's Union Template</description>
+	<description>DESCRIPTION</description>
 
 	<files>
 		<folder>css</folder>
@@ -25,7 +26,6 @@
 	<positions>
 		<position>debug</position>
 		<position>header</position>
-		<position>nav</position>
 		<position>top</position>
 		<position>sidebar</position>
 		<position>bottom</position>

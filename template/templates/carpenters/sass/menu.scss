@@ -11,8 +11,6 @@
 		*display: inline;
 		*zoom: 1;
 		position: relative;
-	
-		padding: 0 5px;
 	}
 
 	.menu > li > a,
@@ -33,6 +31,35 @@
 
 		li {
 			white-space: nowrap;
+		}
+	}
+}
+
+.primary {
+	font-size: 14px;
+	text-align: center;
+	
+	.menu {
+		line-height: 47px;
+	}
+	
+	li {
+		padding-left: 28px;
+		margin-left: 28px;
+		background: url('../images/divider_menu.png') left center no-repeat;
+		&:first-child {
+			background: none;
+			padding-left: 0;
+			margin-left: 0;
+		}
+	}
+	
+	a {
+		color: black;
+		
+		&:hover {
+			color: $red;
+			text-decoration: none;
 		}
 	}
 }

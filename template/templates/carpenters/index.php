@@ -66,43 +66,40 @@ $typekit = null;
 
 <body class="<?= $menu ?>">
 
-	<div id="wrapper">
-		<header>
-			<jdoc:include type="modules" name ="header" style="xhtml" />
-		</header>
-
-		<div id="main">
-			<div id="content">
-				<?php if ($this->countModules('precontent')): ?>
-					<jdoc:include type="modules" name="precontent" style="xhtml" />
-				<?php endif; ?>
-
-				<article>
-					<jdoc:include type="component" />
-				</article>
-
-				<?php if ($this->countModules('postcontent')): ?>
-					<jdoc:include type="modules" name="postcontent" style="xhtml" />
-				<?php endif; ?>
-			</div>
-
-			<?php if ($this->countModules('sidebar1')): ?>
-				<aside>
-					<jdoc:include type="modules" name="sidebar1" style="xhtml" />
-				</aside>
-			<?php endif; ?>
-
-			<?php if ($this->countModules('sidebar2')): ?>
-				<aside>
-					<jdoc:include type="modules" name="sidebar2" style="xhtml" />
-				</aside>
-			<?php endif; ?>
+	<div id="wrapper"><div class="container">
+		
+		<div id="header">
+			<jdoc:include type="modules" name="header" style="rounded" />
+			<div class="clear"></div>
 		</div>
+		
+		<div id="main"><div><div>
+			<div id="nav">
+				<jdoc:include type="modules" name="nav" style="rounded" />	
+				<div class="clear"></div>
+			</div>
+			<div id="content">
+				<?php if ($this->countModules('top')): ?>
+					<div id="top">
+						<jdoc:include type="modules" name="top" style="rounded" />
+					</div>
+				<?php endif; ?>
+			
+				<div id="sidebar">
+					<jdoc:include type="modules" name="sidebar" style="rounded" />
+				</div>
+			
+				<div id="comp">
+					<jdoc:include type="component" />
+				</div>
+			</div>
+			<div class="clear"></div>
+		</div></div></div>
 
-		<footer>
-			<jdoc:include type="modules" name="footer" style="xhtml" />
-		</footer>
-	</div>
+		<div id="footer">
+			<jdoc:include type="modules" name="footer" style="rounded" />
+		</div>
+	</div></div>
 
 	<div class="hidden">
 		<jdoc:include type="modules" name="hidden" style="raw" />

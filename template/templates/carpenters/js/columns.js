@@ -33,11 +33,4 @@ CCI.Columns = new Class({
 		this.columns.setStyle('height', this.height);
 	}
 	
-<<<<<<< HEAD:template/templates/carpenters/js/columns.js
-});
-
-window.addEvent('load', function () {
-	// c = new CCI.Columns($('bottom'), '.moduletable');
-=======
->>>>>>> 1bae68b0eba25d74c3a22ca4bd4c91367340f2e9:template/templates/default/js/columns.js
 });
