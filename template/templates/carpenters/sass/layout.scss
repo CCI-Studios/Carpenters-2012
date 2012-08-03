@@ -10,17 +10,17 @@ body {
 
 #header {
 	background: url('../images/pegboard.png') top center no-repeat;
+	min-height: 185px;
 }
 
 #main {
 	background: url('../images/bg_mainTop.png') top center no-repeat;
 	padding: 37px 0 0;
-	height: 1000px;
 	margin: 0 -28px;
 	
 	> div {
 		background: url('../images/bg_mainBottom.png') bottom center no-repeat;
-		padding-bottom: 50px;
+		padding-bottom: 83px;
 	}
 	
 	> div > div {
@@ -54,4 +54,27 @@ body {
 #comp {
 	float: left;
 	width: 542px;
+}
+
+#bottom {
+	width: 100%;
+}
+
+#footer {
+	padding-bottom: 30px;
+	overflow: auto;
+}
+
+#copyright {
+	float: right;
+	font-size: 10px;
+	text-align: right;
+	
+	a {
+		color: black;
+		&:hover {
+			color: $red;
+			text-decoration: none;
+		}
+	}
 }
