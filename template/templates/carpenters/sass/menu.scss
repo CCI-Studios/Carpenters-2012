@@ -64,6 +64,22 @@
 	}
 }
 
+.secondary {
+	float: left;
+	font-size: 10px;
+	line-height: 1em;
+	margin-left: -10px;
+	
+	li {
+		padding: 0 8px;
+		border-left: 1px solid $red;
+		&:first-child {
+			padding-left: 0;
+			border: 0;
+		}
+	}
+}
+
 // @group vmenu
 .vmenu {
 
