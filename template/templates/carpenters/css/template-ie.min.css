@@ -459,16 +459,16 @@ body {
   background: url("../images/bg.jpg") top center repeat-x; }
 
 #header {
-  background: url("../images/pegboard.png") top center no-repeat; }
+  background: url("../images/pegboard.png") top center no-repeat;
+  min-height: 185px; }
 
 #main {
   background: url("../images/bg_mainTop.png") top center no-repeat;
   padding: 37px 0 0;
-  height: 1000px;
   margin: 0 -28px; }
   #main > div {
     background: url("../images/bg_mainBottom.png") bottom center no-repeat;
-    padding-bottom: 50px; }
+    padding-bottom: 83px; }
   #main > div > div {
     background: url("../images/bg_mainMiddle.png") top center repeat-y;
     padding: 0 37px; }
@@ -494,6 +494,23 @@ body {
 #comp {
   float: left;
   width: 542px; }
+
+#bottom {
+  width: 100%; }
+
+#footer {
+  padding-bottom: 30px;
+  overflow: auto; }
+
+#copyright {
+  float: right;
+  font-size: 10px;
+  text-align: right; }
+  #copyright a {
+    color: black; }
+    #copyright a:hover {
+      color: #d72229;
+      text-decoration: none; }
 
 #sidebar .module {
   margin-top: 30px; }
@@ -554,6 +571,18 @@ body {
     .primary a:hover {
       color: #d72229;
       text-decoration: none; }
+
+.secondary {
+  float: left;
+  font-size: 10px;
+  line-height: 1em;
+  margin-left: -10px; }
+  .secondary li {
+    padding: 0 8px;
+    border-left: 1px solid #d72229; }
+    .secondary li:first-child {
+      padding-left: 0;
+      border: 0; }
 
 .vmenu .menu {
   margin: 0;
