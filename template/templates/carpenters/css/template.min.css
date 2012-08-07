@@ -394,6 +394,9 @@ h1,
   background: url("../images/bg_headers.png") left bottom no-repeat;
   border-bottom: 1px solid silver; }
 
+h2 {
+  font-size: 12px; }
+
 h4 {
   font-size: 12px; }
 
@@ -460,7 +463,8 @@ body {
 
 #header {
   background: url("../images/pegboard.png") top center no-repeat;
-  min-height: 185px; }
+  min-height: 185px;
+  position: relative; }
 
 #main {
   background: url("../images/bg_mainTop.png") top center no-repeat;
@@ -476,7 +480,7 @@ body {
 #nav {
   background: url("../images/bg_nav.png") top center no-repeat;
   margin: 0 -32px;
-  padding: 0 20px; }
+  padding: 0 20px 6px; }
 
 #content {
   padding: 30px 0 0; }
@@ -499,6 +503,7 @@ body {
   width: 100%; }
 
 #footer {
+  margin: 0 -10px;
   padding-bottom: 30px;
   overflow: auto; }
 
@@ -514,6 +519,8 @@ body {
 
 #sidebar .module {
   margin-top: 30px; }
+  #sidebar .module p {
+    margin: .5em 0; }
   #sidebar .module:first-child {
     margin-top: 0; }
 
@@ -523,7 +530,7 @@ body {
   padding: 0; }
   .category-module li {
     padding: 8px;
-    margin-top: 10px; }
+    margin: 10px 0 0 -8px; }
     .category-module li:first-child {
       margin-top: 0; }
     .category-module li:hover {
@@ -559,8 +566,8 @@ body {
   .primary .menu {
     line-height: 47px; }
   .primary li {
-    padding-left: 28px;
-    margin-left: 28px;
+    padding-left: 35px;
+    margin-left: 35px;
     background: url("../images/divider_menu.png") left center no-repeat; }
     .primary li:first-child {
       background: none;
@@ -572,17 +579,25 @@ body {
       color: #d72229;
       text-decoration: none; }
 
-.secondary {
+.secondary,
+.top {
   float: left;
   font-size: 10px;
-  line-height: 1em;
-  margin-left: -10px; }
-  .secondary li {
+  line-height: 1em; }
+  .secondary li,
+  .top li {
     padding: 0 8px;
     border-left: 1px solid #d72229; }
-    .secondary li:first-child {
+    .secondary li:first-child,
+    .top li:first-child {
       padding-left: 0;
       border: 0; }
+
+.top {
+  font-size: 12px;
+  position: absolute;
+  top: 18px;
+  right: 0; }
 
 .vmenu .menu {
   margin: 0;
@@ -622,6 +637,20 @@ body {
   font-size: 10px;
   font-style: italic;
   margin-bottom: 0; }
+
+ul.sigProClassic li.sigProThumb {
+  margin: 0 0 0 21px;
+  padding: 0; }
+  ul.sigProClassic li.sigProThumb:first-child {
+    margin: 0; }
+
+ul.sigProClassic li.sigProThumb span.sigProLinkOuterWrapper {
+  padding: 0; }
+
+ul.sigProClassic li.sigProThumb span.sigProLinkWrapper {
+  margin: 0;
+  padding: 0;
+  border: 1px solid #cccccc; }
 
 .phone-visible, .mobile-visible,
 .tablet-hidden, .desktop-hidden {
