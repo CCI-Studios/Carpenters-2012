@@ -22,11 +22,13 @@ body {
 	> div {
 		background: url('../images/bg_mainBottom.png') bottom center no-repeat;
 		padding-bottom: 83px;
+		*zoom: 1;
 	}
 	
 	> div > div {
 		background: url('../images/bg_mainMiddle.png') top center repeat-y;
 		padding: 0 37px;
+		*zoom: 1;
 	}
 }
 
@@ -38,6 +40,7 @@ body {
 
 #content {
 	padding: 30px 0 0;
+	*zoom: 1;
 }
 
 #top,
@@ -47,7 +50,7 @@ body {
 	margin-bottom: 25px;
 	
 	&.wide1 {
-		width: 100%;
+		width: auto;
 	}
 }
 
@@ -59,10 +62,6 @@ body {
 	float: right;
 	width: 302px;
 	margin-left: 58px;
-}
-
-#bottom {
-	width: 100%;
 }
 
 #footer {
