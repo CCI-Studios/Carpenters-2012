@@ -80,16 +80,30 @@ $typekit = null;
 			</div>
 			<div id="content">
 				<?php if ($this->countModules('top')): ?>
-					<div id="top">
+					<div id="top" class="<?php 
+								if (!$this->countModules('sidebar')) {
+									echo 'wide1';
+								} else {
+									echo 'wide2';
+								}
+						?>">
 						<jdoc:include type="modules" name="top" style="rounded" />
 					</div>
 				<?php endif; ?>
 			
+				<?php if ($this->countModules('sidebar')): ?>
 				<div id="sidebar">
 					<jdoc:include type="modules" name="sidebar" style="rounded" />
 				</div>
+				<?php endif; ?>
 			
-				<div id="comp">
+				<div id="comp" class="<?php 
+							if (!$this->countModules('sidebar')) {
+								echo 'wide1';
+							} else {
+								echo 'wide2';
+							}
+					?>">
 					<jdoc:include type="component" />
 				</div>
 				
