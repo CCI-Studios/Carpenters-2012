@@ -376,7 +376,7 @@ body, select, input, textarea {
   -webkit-box-sizing: border-box;
   -ms-box-sizing: border-box;
   box-sizing: border-box;
-  *behavior: url(/templates/default/resources/boxsizing.htc); }
+  *behavior: url(/templates/carpenters/resources/boxsizing.htc); }
 
 /* Headers (h1, h2, etc) have no default font-size or margin; define those yourself */
 h1, h2, h3, h4, h5, h6 {
@@ -486,10 +486,12 @@ body {
   margin: 0 -28px; }
   #main > div {
     background: url("../images/bg_mainBottom.png") bottom center no-repeat;
-    padding-bottom: 83px; }
+    padding-bottom: 83px;
+    *zoom: 1; }
   #main > div > div {
     background: url("../images/bg_mainMiddle.png") top center repeat-y;
-    padding: 0 37px; }
+    padding: 0 37px;
+    *zoom: 1; }
 
 #nav {
   background: url("../images/bg_nav.png") top center no-repeat;
@@ -497,7 +499,8 @@ body {
   padding: 0 20px 6px; }
 
 #content {
-  padding: 30px 0 0; }
+  padding: 30px 0 0;
+  *zoom: 1; }
 
 #top,
 #comp {
@@ -506,7 +509,7 @@ body {
   margin-bottom: 25px; }
   #top.wide1,
   #comp.wide1 {
-    width: 100%; }
+    width: auto; }
 
 #top {
   margin-bottom: 25px; }
@@ -515,9 +518,6 @@ body {
   float: right;
   width: 302px;
   margin-left: 58px; }
-
-#bottom {
-  width: 100%; }
 
 #footer {
   margin: 0 -10px;
@@ -546,11 +546,11 @@ body {
 
 .category-module {
   list-style: none;
-  margin: 0;
+  margin: -8px 0 0 -8px;
   padding: 0; }
   .category-module li {
     padding: 8px;
-    margin: 10px 0 0 -8px; }
+    margin: 8px 0 0; }
     .category-module li:first-child {
       margin-top: 0; }
     .category-module li:hover {
@@ -664,6 +664,8 @@ ul.sigProClassic {
 ul.sigProClassic li.sigProThumb {
   margin: 0 0 21px 21px;
   padding: 0; }
+  #bottom ul.sigProClassic li.sigProThumb {
+    margin-bottom: 0; }
 
 ul.sigProClassic li.sigProThumb span.sigProLinkOuterWrapper {
   padding: 0; }
