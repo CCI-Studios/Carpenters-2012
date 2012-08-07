@@ -4,6 +4,11 @@
 
 #sidebar .module {
 	margin-top: 30px;
+	
+	p {
+		margin: .5em 0;
+	}
+	
 	&:first-child {
 		margin-top: 0;
 	}
