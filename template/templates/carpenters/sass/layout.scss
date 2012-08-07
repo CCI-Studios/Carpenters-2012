@@ -40,9 +40,18 @@ body {
 	padding: 30px 0 0;
 }
 
-#top {
+#top,
+#comp {
 	float: left;
 	width: 542px;
+	margin-bottom: 25px;
+	
+	&.wide1 {
+		width: 100%;
+	}
+}
+
+#top {
 	margin-bottom: 25px;
 }
 
@@ -50,11 +59,6 @@ body {
 	float: right;
 	width: 302px;
 	margin-left: 58px;
-}
-
-#comp {
-	float: left;
-	width: 542px;
 }
 
 #bottom {
