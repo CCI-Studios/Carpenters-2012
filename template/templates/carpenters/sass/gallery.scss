@@ -5,6 +5,10 @@ ul.sigProClassic {
 ul.sigProClassic li.sigProThumb {
 	margin: 0 0 21px 21px;
 	padding: 0;
+	
+	#bottom & {
+		margin-bottom: 0;
+	}
 }
 
 ul.sigProClassic li.sigProThumb span.sigProLinkOuterWrapper {
