@@ -92,6 +92,12 @@ $typekit = null;
 				<div id="comp">
 					<jdoc:include type="component" />
 				</div>
+				
+				<div class="clear"></div>
+				
+				<div id="bottom">
+					<jdoc:include type="modules" name="bottom" style="rounded" />
+				</div>
 			</div>
 			<div class="clear"></div>
 		</div></div></div>
