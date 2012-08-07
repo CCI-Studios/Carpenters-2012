@@ -58,3 +58,13 @@ a:hover {
 p {
 	margin: .67em 0;
 }
+
+.item-page ul {
+	list-style: none;
+	padding-left: 10px;
+	
+	li {
+		padding-left: 20px;
+		background: url('../images/bullet.png') left center no-repeat;
+	}
+}
