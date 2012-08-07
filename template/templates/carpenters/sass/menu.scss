@@ -44,8 +44,8 @@
 	}
 	
 	li {
-		padding-left: 28px;
-		margin-left: 28px;
+		padding-left: 35px;
+		margin-left: 35px;
 		background: url('../images/divider_menu.png') left center no-repeat;
 		&:first-child {
 			background: none;
@@ -64,11 +64,11 @@
 	}
 }
 
-.secondary {
+.secondary,
+.top {
 	float: left;
 	font-size: 10px;
 	line-height: 1em;
-	margin-left: -10px;
 	
 	li {
 		padding: 0 8px;
@@ -78,6 +78,14 @@
 			border: 0;
 		}
 	}
+}
+
+.top {
+	font-size: 12px;
+	position: absolute;
+	top: 18px;
+	right: 0;
+	
 }
 
 // @group vmenu
