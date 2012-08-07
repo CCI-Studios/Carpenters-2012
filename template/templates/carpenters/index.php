@@ -109,9 +109,11 @@ $typekit = null;
 				
 				<div class="clear"></div>
 				
+				<?php if ($this->countModules('bottom')): ?>
 				<div id="bottom">
 					<jdoc:include type="modules" name="bottom" style="rounded" />
 				</div>
+				<?php endif; ?>
 			</div>
 			<div class="clear"></div>
 		</div></div></div>
