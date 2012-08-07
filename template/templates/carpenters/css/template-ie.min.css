@@ -382,7 +382,7 @@ body, select, input, textarea {
 h1, h2, h3, h4, h5, h6 {
   font-weight: bold;
   margin: 0;
-  color: #d72229; }
+  color: #c61e24; }
 
 h1,
 .module h3 {
@@ -395,6 +395,10 @@ h1,
   border-bottom: 1px solid silver; }
 
 h2 {
+  font-size: 14px;
+  margin: 1em 0 .67em; }
+
+h3 {
   font-size: 12px; }
 
 h4 {
@@ -413,6 +417,16 @@ a, a:active, a:visited {
 a:hover {
   color: #d72229;
   text-decoration: underline; }
+
+p {
+  margin: .67em 0; }
+
+.item-page ul {
+  list-style: none;
+  padding-left: 10px; }
+  .item-page ul li {
+    padding-left: 20px;
+    background: url("../images/bullet.png") left center no-repeat; }
 
 /* forms */
 /* Align checkboxes, radios, text inputs with their label by: Thierry Koblentz tjkdesign.com/ez-css/css/base.css  */
@@ -485,19 +499,22 @@ body {
 #content {
   padding: 30px 0 0; }
 
-#top {
+#top,
+#comp {
   float: left;
   width: 542px;
+  margin-bottom: 25px; }
+  #top.wide1,
+  #comp.wide1 {
+    width: 100%; }
+
+#top {
   margin-bottom: 25px; }
 
 #sidebar {
   float: right;
   width: 302px;
   margin-left: 58px; }
-
-#comp {
-  float: left;
-  width: 542px; }
 
 #bottom {
   width: 100%; }
@@ -516,6 +533,9 @@ body {
     #copyright a:hover {
       color: #d72229;
       text-decoration: none; }
+
+.blog .item-separator {
+  margin-bottom: 3em; }
 
 #sidebar .module {
   margin-top: 30px; }
@@ -638,11 +658,12 @@ body {
   font-style: italic;
   margin-bottom: 0; }
 
+ul.sigProClassic {
+  margin-left: -21px !important; }
+
 ul.sigProClassic li.sigProThumb {
-  margin: 0 0 0 21px;
+  margin: 0 0 21px 21px;
   padding: 0; }
-  ul.sigProClassic li.sigProThumb:first-child {
-    margin: 0; }
 
 ul.sigProClassic li.sigProThumb span.sigProLinkOuterWrapper {
   padding: 0; }
