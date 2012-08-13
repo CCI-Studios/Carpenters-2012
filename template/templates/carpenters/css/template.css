@@ -537,6 +537,15 @@ body {
 .blog .item-separator {
   margin-bottom: 3em; }
 
+.module.masthead .custom {
+  background-position: bottom right;
+  background-repeat: no-repeat;
+  height: 225px;
+  border: 1px solid silver;
+  padding: 35px 260px 35px 25px;
+  font-weight: lighter;
+  color: #d72229; }
+
 #sidebar .module {
   margin-top: 30px; }
   #sidebar .module p {
