@@ -2,6 +2,17 @@
 .module {} // DO NOT TOUCH
 .module h3 {} // DO TOUCH
 
+.module.masthead .custom {
+	background-position: bottom right;
+	background-repeat: no-repeat;
+	height: 225px;
+	border: 1px solid $border;
+	padding: 35px 260px 35px 25px;
+
+	font-weight: lighter;
+	color: $red;
+}
+
 #sidebar .module {
 	margin-top: 30px;
 	
