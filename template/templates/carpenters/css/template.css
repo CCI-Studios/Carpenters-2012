@@ -628,6 +628,12 @@ body {
   top: 18px;
   right: 0; }
 
+  .top.left
+{
+  right:auto;
+  left:0;
+}
+
 .vmenu .menu {
   margin: 0;
   padding: 0; }
